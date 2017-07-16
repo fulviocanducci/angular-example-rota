@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <style>
+            form.label {
+                width: 150px;
+            }
+        </style>      
+        <!--<link href="css/style.css" rel="stylesheet">-->        
+    </head>
+    <body ng-controller="indexCtrl">   
+        <a href="#!/" >Home</a>
+        <a href="#!/create">Create</a>
+        <div ng-view></div>   
+        <script src="js/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
