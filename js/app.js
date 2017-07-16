@@ -26,5 +26,5 @@ var app = angular.module('app', ['ngRoute']);
 
     app.controller("createCtrl", ["$scope", "$location", function($scope, $location)
     {        
-        $scope.nome = "Fúlvio";
+        $scope.nome = "Pessoas";
     }]);
