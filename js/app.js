@@ -1,5 +1,8 @@
 var app = angular.module('app', ['ngRoute']);
-
+var focus = function(element)
+{
+    document.getElementById(element).focus();    
+}
     app.config(function($routeProvider, $locationProvider){        
         $routeProvider
         .when('/', {
@@ -25,6 +28,8 @@ var app = angular.module('app', ['ngRoute']);
     }]);
 
     app.controller("createCtrl", ["$scope", "$location", function($scope, $location)
-    {        
-        $scope.nome = "Pessoas";
+    {   
+        focus("nm");
+        $scope.nome = "";
+        $scope.sobrenome = "";
     }]);
